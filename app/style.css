@@ -7,8 +7,45 @@ body{
     color: #fff;
     padding: 1rem;
 }
-
+.chatBox{
+    width: 700px;
+    height: 660px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+}
+.messageContanier{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+}
+.messageContanier::-webkit-scrollbar{
+    display: none;
+}
+.activityContanier{
+    width: 700px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: italic;
+}
+.activityContanier  p{
+    font-size: 1rem;
+    color: gray;
+}
 form {
+    width: 700px;
+    height: 70px;
     display: flex;
     justify-content: center;
     gap: 4px;
@@ -19,8 +56,35 @@ ul {
     flex-flow: column;
     justify-content: left;
     list-style-type: none;
+    color: #353535e7;
+    font-weight: bold;
 }
+ ul li{
+    margin-top: 10px;
+    font-size: 1.2rem;
+ }
 input, button {
     border-radius: 10px;
     padding: 10px;
+    border: none;
+    background: none;
+}
+input{
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 550px;
+    font-size: 1.1rem;
+}
+input:focus{
+    border: 1px solid gray;
+}
+button{
+    font-size: 1rem;
+    color: white;
+    background-color: #222;
+    width: auto;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-left: 20px;
+    cursor: pointer;
 }
